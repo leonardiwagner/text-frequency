@@ -1,4 +1,4 @@
-(defproject text-frequency "0.0.1-SNAPSHOT"
+(defproject text-frequency "0.0.2-SNAPSHOT"
   :description "group and rank words frequency in a text"
   :url "https://github.com/leonardiwagner/text-frequency"
   :license {:name "Apache License"
