@@ -14,7 +14,7 @@
     (fn [coll word]
       (if (contains? coll (keyword word))
         (update coll (keyword word) + (get words2 word))
-        (assoc coll (keyword word) 1)))
+        (assoc coll (keyword word) (get words2 (keyword word)))))
     words1 (keys words2)))
 
 (defn sort-words [words]

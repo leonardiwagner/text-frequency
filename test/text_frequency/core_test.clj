@@ -15,8 +15,8 @@
     (is (= result expectation))))
 
 (deftest merge-count-words
-  (let [words1 {:two 1 :three 2 :four 1}
-        words2 {:two 1 :three 1 :four 3}
+  (let [words1 {:two 1 :three 2 :four 1 :eight 8}
+        words2 {:two 1 :three 1 :four 3 :ten 10}
         result (text-frequency/merge-words words1 words2)
-        expectation {:two 2 :three 3 :four 4}]
+        expectation {:two 2 :three 3 :four 4 :eight 8 :ten 10}]
     (is (= result expectation))))
